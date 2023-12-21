@@ -11,6 +11,7 @@ html, body {
   display: block;
 }
 #v0 {
+  -webkit-overflow-scrolling: touch;
   position: fixed;
   top: 0;
   left: 0;
