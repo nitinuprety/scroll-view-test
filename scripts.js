@@ -13,6 +13,7 @@ vid.addEventListener('loadedmetadata', function() {
   setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
 });
 
+
 // Use requestAnimationFrame for smooth playback
 function scrollPlay(){  
   var frameNumber  = window.scrollY/playbackConst;
