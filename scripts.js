@@ -1,6 +1,6 @@
 var frameNumber = 0, // start video at frame 0
     // lower numbers = faster playback
-    playbackConst = 500, 
+    playbackConst = 800, 
     // get page height from video duration
     setHeight = document.getElementById("set-height"), 
     // select video element         
@@ -13,7 +13,7 @@ vid.addEventListener('loadedmetadata', function() {
 
 // Use requestAnimationFrame for smooth playback
 function scrollPlay(){  
-  var frameNumber  = window.scrollY/playbackConst;
+  var frameNumber  = window.scrollY/TouchEvent/playbackConst;
   vid.currentTime  = frameNumber;
   window.requestAnimationFrame(scrollPlay);
 }
